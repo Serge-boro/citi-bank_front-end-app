@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customers Dashboard</title>
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside>
+      <div class="brand-logo">
+        <img src="" alt="log company" />
+        <h2>Kahf tech</h2>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i> <span>Dashboard</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-chart-line"></i> <span>Overview</span></a
+            >
+          </li>
+          <li class="active">
+            <a href="#"><i class="fas fa-users"></i> <span>Customers</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-folder"></i> <span>Projects</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-file-alt"></i> <span>Project files</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-comment"></i> <span>Messages</span>
+              <span class="badge">4</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-bell"></i> <span>Notifications</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Footer with User Profile -->
+      <footer>
+        <div class="sidebar-footer">
+          <ul>
+            <li><i class="fas fa-life-ring"></i> Support</li>
+            <li><i class="fas fa-cog"></i> Settings</li>
+          </ul>
+
+          <!-- User Profile Section -->
+          <div class="user-profile">
+            <img src="#" alt="User Avatar" />
+            <div>
+              <div class="user-details">
+                <p>Tuhel Rana</p>
+              </div>
+              <div>
+                <p class="email">tuhelrana@gmail.com</p>
+              </div>
+            </div>
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+          </div>
+        </div>
+      </footer>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header Section -->
+      <div class="header">
+        <div class="header-text">
+          <h2>Customers</h2>
+          <h5>Find all platform customers here</h5>
+        </div>
+        <div class="cvs-button-block">
+          <button class="cvs-button">
+            <i class="fas fa-file-export"></i> Export CSV
+          </button>
+          <button><i class="fas fa-plus"></i> Invite customer</button>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats">
+        <div>
+          <h3>General Customers</h3>
+          <p>11,450 <span class="stats-1">+2.15%</span></p>
+        </div>
+        <div>
+          <h3>Admins</h3>
+          <p>812 <span class="stats-2">-0.34%</span></p>
+        </div>
+        <div>
+          <h3>Creators</h3>
+          <p>83 <span class="stats-3">+1.18%</span></p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Filters and Search -->
+      <div class="filter-search">
+        <div>
+          <p>All customer (12,345)</p>
+          <div class="tabs">
+            <button class="active">View All</button>
+            <button>General</button>
+            <button>Admin</button>
+            <button>Creator</button>
+          </div>
+        </div>
+        <div class="search-tags">
+          <input type="text" placeholder="Search..." />
+          <button class="filter"><i class="fas fa-filter"></i> Filters</button>
+        </div>
+      </div>
+
+      <!-- Table of Customers -->
+      <table>
+        <thead>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Projects</th>
+            <th>Status</th>
+            <th>Enrolled</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-label="Name">
+              <div class="data-labels-img">
+                <div class="data-labels-email">
+                  <div>
+                    <img src="#" alt="User Avatar" />
+                    <p class="emails-paragraf">@emails</p>
+                  </div>
+                  <p>Arlene McCoy</p>
+                </div>
+              </div>
+            </td>
+            <td data-label="Role">
+              <span class="role-badge role-general">General</span>
+            </td>
+            <td data-label="Projects">12<span class="project-td">/25</span></td>
+            <td data-label="Status">Active</td>
+            <td data-label="Enrolled">May 12, 2019</td>
+            <td><i class="fas fa-ellipsis-v menu-icon"></i></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-label="Name">
+              <div class="data-labels-img">
+                <div class="data-labels-email">
+                  <div>
+                    <img src="user-avatar.jpg" alt="User Avatar" />
+                    <p class="emails-paragraf">@emails</p>
+                  </div>
+                  <p>Brooklyn Simmons</p>
+                </div>
+              </div>
+            </td>
+            <td data-label="Role">
+              <span class="role-badge role-admin">Admin</span>
+            </td>
+
+            <td data-label="Projects">18<span class="project-td">/50</span></td>
+
+            <td data-label="Status">Active</td>
+            <td data-label="Enrolled">August 7, 2017</td>
+            <td><i class="fas fa-ellipsis-v menu-icon"></i></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-label="Name">
+              <div class="data-labels-img">
+                <div class="data-labels-email">
+                  <div>
+                    <img src="user-avatar.jpg" alt="User Avatar" />
+                    <p class="emails-paragraf">@emails</p>
+                  </div>
+                  <p>Maribel Koss</p>
+                </div>
+              </div>
+            </td>
+            <td data-label="Role">
+              <span class="role-badge role-general">General</span>
+            </td>
+            <td data-label="Projects">7<span class="project-td">/25</span></td>
+            <td data-label="Status">Active</td>
+            <td data-label="Enrolled">May 9, 2014</td>
+            <td><i class="fas fa-ellipsis-v menu-icon"></i></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-label="Name">
+              <div class="data-labels-img">
+                <div class="data-labels-email">
+                  <div>
+                    <img src="user-avatar.jpg" alt="User Avatar" />
+                    <p class="emails-paragraf">@emails</p>
+                  </div>
+                  <p>Cody Fisher</p>
+                </div>
+              </div>
+            </td>
+            <td data-label="Role">
+              <span class="role-badge role-creator">Creator</span>
+            </td>
+            <td data-label="Projects">
+              27<span class="project-td">/100</span>
+            </td>
+            <td data-label="Status">Active</td>
+            <td data-label="Enrolled">October 24, 2018</td>
+            <td><i class="fas fa-ellipsis-v menu-icon"></i></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-label="Name">
+              <div class="data-labels-img">
+                <div class="data-labels-email">
+                  <div>
+                    <img src="user-avatar.jpg" alt="User Avatar" />
+                    <p class="emails-paragraf">@emails</p>
+                  </div>
+                  <p>Darlene Robertson</p>
+                </div>
+              </div>
+            </td>
+            <td data-label="Role">
+              <span class="role-badge role-general">General</span>
+            </td>
+            <td data-label="Projects">4<span class="project-td">/25</span></td>
+            <td data-label="Status">Active</td>
+            <td data-label="Enrolled">March 6, 2018</td>
+            <td><i class="fas fa-ellipsis-v menu-icon"></i></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-label="Name">
+              <div class="data-labels-img">
+                <div class="data-labels-email">
+                  <div>
+                    <img src="user-avatar.jpg" alt="User Avatar" />
+                    <p class="emails-paragraf">@emails</p>
+                  </div>
+                  <p>Cameron Williamson</p>
+                </div>
+              </div>
+            </td>
+            <td data-label="Role">
+              <span class="role-badge role-general">General</span>
+            </td>
+            <td data-label="Projects">6<span class="project-td">/25</span></td>
+            <td data-label="Status">Active</td>
+            <td data-label="Enrolled">July 14, 2015</td>
+            <td><i class="fas fa-ellipsis-v menu-icon"></i></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td data-label="Name">
+              <div class="data-labels-img">
+                <div class="data-labels-email">
+                  <div>
+                    <img src="user-avatar.jpg" alt="User Avatar" />
+                    <p class="emails-paragraf">@emails</p>
+                  </div>
+                  <p>Dianne Russell</p>
+                </div>
+              </div>
+            </td>
+            <td data-label="Role">
+              <span class="role-badge role-admin">Admin</span>
+            </td>
+            <td data-label="Projects">32<span class="project-td">/50</span></td>
+            <td data-label="Status">Active</td>
+            <td data-label="Enrolled">August 2, 2013</td>
+            <td><i class="fas fa-ellipsis-v menu-icon"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
